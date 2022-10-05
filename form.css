@@ -1,0 +1,414 @@
+/* @override http://www.onepercentfoundation.com/css/form.css */
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Forms */
+#form form {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+	padding:0px;
+}
+#form fieldset fieldset legend {
+}
+
+#form input, #form textarea {
+	margin-bottom:20px;
+	width:320px;
+	border:1px solid #999;
+	padding:;
+	font-size:12px;
+	color:#666;
+	line-height:18px;
+	
+}
+
+#form input:hover, #form textarea:hover{
+	outline:1px solid #666;
+	background:#dadada;
+	color:#black;
+}
+ #form input:focus, #form textarea:focus{
+	outline:1px solid #666;
+	background:white;
+}
+
+#form textarea{
+	width:322px;	
+}
+
+#form.nominateForm input, #form.nominateForm textarea{
+	width:500px;	
+}
+#form .select select {
+	vertical-align: text-bottom;
+	background:#645957;
+	font-size:12px;
+	border:none;
+	color:white;
+	width:330px;
+	margin-bottom:10px;
+	margin-top:5px;
+	display:block;
+	width:325px;
+	
+}
+
+
+
+#form .date  {
+	display:block;
+	margin-bottom:10px;
+
+}
+#form label{
+	width:100px;
+	text-align:right;
+	display:block;
+	float:left;
+	padding-right:10px;
+	vertical-align:middle;
+	margin-top:0px;
+	
+}
+/* firefox */
+*>#form label { 
+	padding-top:-5px;
+
+	vertical-align:top;
+
+}
+
+#form.nominateForm label{
+	width:540px;
+	text-align:left;
+	display:block;
+	float:none;
+	padding-right:10px;
+	padding-top:10px;
+	
+}
+
+
+
+#form input[type=submit] {
+	
+	display: inline;
+	font-size:12px;
+	width: auto;
+	padding:5px;
+	vertical-align: bottom;
+	background:#645957;
+	border: 1px solid #645957; 
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:white;
+	cursor:pointer;
+	outline:none;
+	margin-left:110px
+}
+
+ #form input[type=submit]:hover {
+	
+	background:white;
+	color:#645957;
+}
+
+#donate_submit a{
+	
+	font-size:12px;
+	padding:7px;
+	background:#645957;
+	border: 1px solid #645957; 
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:white;
+	cursor:pointer;
+	outline:none;
+	margin-top:2px;
+	margin-right:4px;
+	
+	
+}
+
+#donate_submit{
+	margin-top:40px;
+	margin-left:110px;
+}
+#donate_submit  input[type=submit], #form.nominateForm  input[type=submit]{
+	margin-left:0px;
+	
+}
+#donate_submit input[type=submit], #donate_submit a{
+	display:compact;
+	float:left;
+	margin-right:4px;
+}
+#donate_submit a:hover{
+	background:white;
+	color:#645957;
+}
+
+/* Firefox */
+@-moz-document url-prefix(){
+
+	#donate_submit input[type=submit]{
+		height:31px;
+		margin-top:2px;
+		
+	}
+}
+
+
+#form input.error, #form textarea.error {
+	background:white;
+	border:1px solid #E96220;
+}
+
+	
+div.error{
+	display:block;
+	width:318px;
+	padding:4px;
+	background:#E96220;
+	color:white;
+	-moz-border-radius-bottomleft:5px; -webkit-border-bottom-left-radius:5px; border-bottom-left-radius:5px;
+	-moz-border-radius-bottomright:5px; -webkit-border-bottom-right-radius:5px; border-bottom-right-radius:5px;
+	margin-left:109px;
+	margin-top:-20px;
+	
+	
+}
+
+#form .date div.error{
+	display:none;
+	visibility:hidden;
+position:absolute;
+top:-100px;
+left:-100px;
+}
+	
+	#form .date select.error{
+	background:#E96220;
+}
+	
+#form.nominateForm div.error{
+	margin-left:0px;
+	width:496px;
+	
+	
+}
+
+
+#form .input{
+	display:block;
+	clear:left;
+	margin-bottom:4px;
+}
+	
+.form_section{
+	width:100%;
+	margin-bottom:5px;
+	padding:8px;
+	border:1px solid #333;
+	}
+	
+#nominate_1{
+		background:#e7eae4;
+}
+#nominate_2{
+		background:#f1f3f2;
+}
+.bigButton{
+	display:block;
+	height:300px;
+	border:1px solid #dadada;
+	font-size:24px;
+	text-align:center;
+	line-height:300px;
+	vertical-align:middle;
+	background:#333333;
+	color:white;
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+
+/* Progress Indicator  */
+
+
+#progress{
+	
+		margin-bottom:12px;
+
+}
+#progress ul li{
+	float:left;
+
+}
+
+
+#progress ul li a{
+	display:block;
+	cursor:default;
+	color:#333;
+	background:#white;
+	border: 1px solid #999; 
+	width:110px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	vertical align:center;
+	}
+	
+	
+#progress ul li.current a{
+	background:#8EA3A5;
+	color:white;
+	
+}
+	
+	
+	#progress ul li.right a{
+		-moz-border-top-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-left:0px;
+	
+	}
+
+	
+	#progress ul li.left a{
+		-moz-border-top-left-radius: 5px;
+		-moz-border-bottom-left-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-right:0px;
+	}
+
+
+#progress ul li.middle a{
+	
+		border-left:0;
+	border-right:0;
+
+}
+
+/* Progress Indicator  */
+
+
+
+/* fill in amount  */
+#fill_in_amount{
+	display:block;
+	height:25px;
+	margin-left:110px;
+	width:400px;
+}
+#fill_in_amount a.amount{
+	margin:auto;
+	float:left;
+	display:block;
+	color:#E96220;
+	width:55px;
+	padding:5px;
+	text-align:left;
+}
+#fill_in_amount a.amount:hover{
+	background:#E96220;
+	color:white;
+}
+	
+
+
+/* fill in amount  */
+
+.extra_notice{
+	margin-left:110px;
+	font-size:10px;
+	color:#666;
+}
+
+
+
+#form .checkboxes{
+
+}
+
+
+#form .checkboxes label{
+	position:absolute;
+	margin-top:-35px;
+	text-align:left;
+	width:200px;
+	margin-left:40px;
+}
+
+#form .checkboxes .checkbox{
+	height:22px;
+	width:200px;
+	margin-left:110px;
+}
+
+
+
+@-moz-document url-prefix()
+{
+	
+#form .checkboxes label{
+	position:absolute;
+	margin-left:-80px;
+	margin-top:-35px;
+	text-align:left;
+	width:200px;
+}
+
+#form .checkboxes .checkbox{
+	height:22px;
+	width:200px;
+	margin-left:200px;
+
+}
+
+
+}
+
+
+
+#form .checkboxes  input:hover{
+	background:#999;
+	outline:0;
+	border:0;
+}
+
+
+#form-error #flashMessage{
+	margin-top:5px;
+	margin-bottom:5px;
+	background:none;
+	position:static;
+	width:450px;
+	border:2px solid #E96220;
+	color:#333;
+	font-family:Verdana, Geneva, sans-serif;
+	text-transform:uppercase;
+	
+	
+}
+
+
+p.notice{
+	color:#645957;
+	width:70%;
+	margin-left:110px;
+	padding-bottom:5px;
+	font-size: 10px;
+}

@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TextTransformComponents</key>
+	<array>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/projects\/project\2.html</string>
+				<key>SearchString</key>
+				<string>(project.php\?id\=)([0-9]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>page.php</string>
+				<key>SearchString</key>
+				<string>blank.php</string>
+				<key>UseGrep</key>
+				<false/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/visualizations\/viz\2.html</string>
+				<key>SearchString</key>
+				<string>(viz.php\?id\=)([0-9]++)(\&amp;amp\;project_id\=)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/visualizations\/viz\2.html</string>
+				<key>SearchString</key>
+				<string>(viz.php\?id\=)([0-9]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/visualizations\/viz\2.html</string>
+				<key>SearchString</key>
+				<string>(viz.php\?id\=)([0-9]++)\&amp;</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/publications\/pub\2.html</string>
+				<key>SearchString</key>
+				<string>(pub.php\?id\=)([0-9]++)(\&amp;amp\;project_id\=)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/publications\/pub\2.html</string>
+				<key>SearchString</key>
+				<string>(pub.php\?id\=)([0-9]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string></string>
+				<key>SearchString</key>
+				<string>&lt;form method="post" action="search.php"&gt;
+		&lt;input type="text" class="input_black" value="SEARCH" name="keyword" onclick="this.value='';" style="float:left;width:227px;" /&gt;
+		&lt;input type="image" src="/group/spatialhistory/media/images/godots.png" alt="Search" style="float:left;margin-left:4px;margin-top:14px;" /&gt;
+&lt;/form&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/index.html</string>
+				<key>SearchString</key>
+				<string>index.php</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/publications.html</string>
+				<key>SearchString</key>
+				<string>pub_toc.php</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/gallery.html</string>
+				<key>SearchString</key>
+				<string>gallery.php</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/projects.html</string>
+				<key>SearchString</key>
+				<string>projects.php</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/about.html\"</string>
+				<key>SearchString</key>
+				<string>page.php\?id\=1\"</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\/group\/spatialhistory\/static\/pages\/page\2.html</string>
+				<key>SearchString</key>
+				<string>(page.php\?id\=)([0-9]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/staff.html</string>
+				<key>SearchString</key>
+				<string>ourteam.php</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>/group/spatialhistory/static/staff.html</string>
+				<key>SearchString</key>
+				<string>/group/spatialhistory/static/ourteam.html</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>affiliates.html#\4</string>
+				<key>SearchString</key>
+				<string>(staff.html\?personid\=)([0-9]++)(\&amp;type\=Lab\+Affiliate)(\#[a-z ]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>staff.html#\4</string>
+				<key>SearchString</key>
+				<string>(staff.html\?personid\=)([0-9]++)(\&amp;type\=Lab\+Staff)(\#[a-z ]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>ras.html#\4</string>
+				<key>SearchString</key>
+				<string>(staff.html\?personid\=)([0-9]++)(\&amp;type\=Current\+Research\+Assistant)(\#[a-z ]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>researchers.html#\4</string>
+				<key>SearchString</key>
+				<string>(staff.html\?personid\=)([0-9]++)(\&amp;type\=Principal\+Investigator)(\#[a-z ]++)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>html</string>
+				<key>SearchString</key>
+				<string>html[0-9]++</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>#</string>
+				<key>SearchString</key>
+				<string>##</string>
+				<key>UseGrep</key>
+				<false/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>.html</string>
+				<key>SearchString</key>
+				<string>.html&amp;</string>
+				<key>UseGrep</key>
+				<false/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>&lt;div class="a16" style="padding: 8px 20px;margin-top:20px;"&gt;Most Recent Projects&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>&lt;div class="a16" style="padding: 8px 20px;margin-top:20px;"&gt;Active Collaborations&lt;/div&gt;</string>
+				<key>UseGrep</key>
+				<false/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>publications.html"&gt;ARTICLES&lt;/a&gt;&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>publications.html"&gt;ESSAYS&lt;/a&gt;&lt;/div&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>	&lt;div&gt;
+		&lt;div class="a16" style="padding: 8px 20px;margin-top:20px;"&gt;Popular Projects&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1147.html"&gt;Mapping Ottoman Epirus: Region, Power and Empire
+	&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1047.html"&gt;Animal City&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1015.html"&gt;Holocaust Geographies Collaborative&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1071.html"&gt;Chinese Railroad Workers&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1153.html"&gt;California Time: Every Photograph is a History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1063.html"&gt;Forma Urbis Romae Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1099.html"&gt;George Moses Horton, the 19th&amp;nbsp;Century Hip-Hop Poet&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project997.html"&gt;Shaping the West&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1141.html"&gt;Imagined San Francisco&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1107.html"&gt;Geographies of Capital&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1069.html"&gt;The Broken Paths of Freedom&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1151.html"&gt;New Maps for the Old Regime&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1139.html"&gt;From Forest to Vineyards: The Changing Landscape in Brazil&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1105.html"&gt;Undocumented Mexican Migration&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1137.html"&gt;The Grand Tour Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1045.html"&gt;Rebooting History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1005.html"&gt;Between the Tides&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1137.html"&gt;The Grand Tour Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>&lt;div&gt;
+		&lt;div class="a16" style="padding: 8px 20px;margin-top:20px;"&gt;Most Recent Projects&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1153.html"&gt;California Time: Every Photograph is a History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1071.html"&gt;Chinese Railroad Workers&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1139.html"&gt;From Forest to Vineyards: The Changing Landscape in Brazil&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1099.html"&gt;George Moses Horton, the 19th&amp;nbsp;Century Hip-Hop Poet&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1141.html"&gt;Imagined San Francisco&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1147.html"&gt;Mapping Ottoman Epirus: Region, Power and Empire
+&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1155.html"&gt;Mapping Urban Change in Colombia: Violence and Resilience, 1970-2019
+&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1151.html"&gt;New Maps for the Old Regime&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1137.html"&gt;The Grand Tour Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1103.html"&gt;Tracing&amp;nbsp;&lt;i&gt;The Arctic Regions&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1073.html"&gt;Spatial History and Genealogy of Desert Ant Colonies&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1105.html"&gt;Undocumented Mexican Migration&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1121.html"&gt;Kindred Britain 2.0: Kindred London&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1107.html"&gt;Geographies of Capital&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1063.html"&gt;Forma Urbis Romae Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string></string>
+				<key>SearchString</key>
+				<string>&lt;font color="gray"&gt;*Please note that this figure requires Adobe Flash Player, downloadable &lt;a href="http://get.adobe.com/flashplayer/"&gt;here.&lt;/a&gt;&lt;/font&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>	&lt;div class="text" style="width:650px;"&gt;&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>	&lt;div class="header" style="margin-top:15px;width:650px;"&gt;End Notes&lt;/div&gt;
+	&lt;div class="text" style="width:650px;"&gt;&lt;/div&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string></string>
+				<key>SearchString</key>
+				<string>      &lt;div class="a12"&gt;&lt;br&gt;&lt;div style="color:#840;background-image: url(/group/spatialhistory/static/message-warning.png);border-color: #ed5;background-position: 8px 8px;background-repeat: no-repeat;border: 1px solid;margin: 5px 25px;padding: 10px 10px 10px 50px;"&gt;
+This website is no longer updated and has been replaced with a static copy. The &lt;strong&gt;Spatial History Project&lt;/strong&gt; was active at Stanford University from 2007-2022, engaging in dozens of collaborative projects led by faculty, staff, graduate students, post-docs, visiting scholars and others at Stanford and beyond. More than 150 undergraduate students from more than a dozen disciplines contributed to these projects. In addition to a robust intellectual exchange built through these partnerships, research outputs included major monographs, edited volumes, journal articles, museum exhibitions, digital articles, robust websites, and dozens of lightweight interactive visualizations, mostly developed with Adobe Flash (now defunct). While most of those publications live on in other forms, the content exclusive to this website is preserved in good faith through this static version of the site. Flash-based content is partially available in emulated form using the Ruffle emulator.
+&lt;/div&gt;&lt;/div&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>&lt;div id="main"&gt;
+
+      &lt;div class="a12"&gt;&lt;br&gt;&lt;div style="color:#840;background-image: url(/group/spatialhistory/static/message-warning.png);border-color: #ed5;background-position: 8px 8px;background-repeat: no-repeat;border: 1px solid;margin: 5px 25px;padding: 10px 10px 10px 50px;"&gt;
+This website is no longer updated and has been replaced with a static copy. The &lt;strong&gt;Spatial History Project&lt;/strong&gt; was active at Stanford University from 2007-2022, engaging in dozens of collaborative projects led by faculty, staff, graduate students, post-docs, visiting scholars and others at Stanford and beyond. More than 150 undergraduate students from more than a dozen disciplines contributed to these projects. In addition to a robust intellectual exchange built through these partnerships, research outputs included major monographs, edited volumes, journal articles, museum exhibitions, digital articles, robust websites, and dozens of lightweight interactive visualizations, mostly developed with Adobe Flash (now defunct). While most of those publications live on in other forms, the content exclusive to this website is preserved in good faith through this static version of the site. Flash-based content is partially available in emulated form using the Ruffle emulator.
+&lt;/div&gt;&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>&lt;div id="main"&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>strong&gt; was</string>
+				<key>SearchString</key>
+				<string>strong&gt; &gt;was</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>&amp;copy;2007-2022</string>
+				<key>SearchString</key>
+				<string>&amp;copy;2022</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>Spatial and Textual Analysis, was made possible </string>
+				<key>SearchString</key>
+				<string>Spatial and Textual Analysis, is made possible </string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>
+&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>	&lt;div class="header" style="margin-top:15px;width:650px;"&gt;End Notes&lt;/div&gt;
+	&lt;div class="text" style="width:650px;"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>		&lt;div&gt;
+		&lt;div class="a16" style="padding: 8px 20px;margin-top:20px;"&gt;Selected Projects&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project997.html"&gt;Shaping the West&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+		&lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project999.html"&gt;Terrain of History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1001.html"&gt;Critical Habitat&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1005.html"&gt;Between the Tides&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+		&lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1039.html"&gt;Vulnerability in Production&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+		&lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1051.html"&gt;Reconstructing California Conservation History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1047.html"&gt;Animal City&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+		&lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1053.html"&gt;Richard Pryor's Peoria&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1147.html"&gt;Mapping Ottoman Epirus: Region, Power and Empire&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1015.html"&gt;Holocaust Geographies Collaborative&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1071.html"&gt;Chinese Railroad Workers&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1063.html"&gt;Forma Urbis Romae Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1143.html"&gt;Follow the Money&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1049.html"&gt;Chinese Canadian Stories&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1059.html"&gt;Geography of the Post&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;</string>
+				<key>SearchString</key>
+				<string>&lt;div&gt;
+		&lt;div class="a16" style="padding: 8px 20px;margin-top:20px;"&gt;Popular Projects&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1147.html"&gt;Mapping Ottoman Epirus: Region, Power and Empire
+	&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1047.html"&gt;Animal City&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1015.html"&gt;Holocaust Geographies Collaborative&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1071.html"&gt;Chinese Railroad Workers&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1153.html"&gt;California Time: Every Photograph is a History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1063.html"&gt;Forma Urbis Romae Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1099.html"&gt;George Moses Horton, the 19th&amp;nbsp;Century Hip-Hop Poet&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project997.html"&gt;Shaping the West&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1141.html"&gt;Imagined San Francisco&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1107.html"&gt;Geographies of Capital&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1069.html"&gt;The Broken Paths of Freedom&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1151.html"&gt;New Maps for the Old Regime&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1139.html"&gt;From Forest to Vineyards: The Changing Landscape in Brazil&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1105.html"&gt;Undocumented Mexican Migration&lt;br&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+		&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1137.html"&gt;The Grand Tour Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1045.html"&gt;Rebooting History&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1005.html"&gt;Between the Tides&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style="clear:both;display:block;margin-bottom:10px;margin-left:26px;height:auto;overflow:hidden;"&gt;
+	    &lt;div style="float:left;margin-right:5px;margin-top:7px;background:#928B81;width:4px;height:4px"&gt;&lt;/div&gt;
+	    &lt;div style="float:left;width:145px;letter-spacing:.01em;" class="a13"&gt;&lt;a href="/group/spatialhistory/static/projects/project1137.html"&gt;The Grand Tour Project&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+	</array>
+	<key>TextTransformOptions</key>
+	<dict>
+		<key>SaveMode</key>
+		<string>yes </string>
+		<key>SearchRecursive</key>
+		<true/>
+		<key>TextFilesOnly</key>
+		<true/>
+	</dict>
+	<key>TextTransformSources</key>
+	<array>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page51.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page85.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page87.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page89.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page91.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page93.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page135.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page137.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page141.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page143.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/Shared/Previously%20Relocated%20Items/Security/Archive/Spatial%20History%20Lab/Website/Static%20SHP/pages/page147.html</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>OpenDocument</string>
+		</dict>
+	</array>
+	<key>com.barebones.DocumentType</key>
+	<string>TextTransform</string>
+</dict>
+</plist>
