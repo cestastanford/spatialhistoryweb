@@ -9,7 +9,7 @@
 		Mail: Bldg 160, Rm 228 - In Person: Fourth Floor<br />
 		Stanford, CA 94305-2055<br />
 		<hr style="color:#666;width:775px;height:1px;" />
-		<img src="/group/spatialhistory/media/images/3bullets.png" alt="Copyright Spatial History Project" style="margin-bottom:4px;margin-top:2px;" />
+		<img src="/media/images/3bullets.png" alt="Copyright Spatial History Project" style="margin-bottom:4px;margin-top:2px;" />
 		<br />
 		</div>
 		<div class="a12" style="color:#666;line-height:20px;margin-bottom:5px">&copy;<?=date("Y")?>&nbsp;&nbsp;&nbsp;The Spatial History Project&nbsp;&nbsp;&nbsp;All Rights Reserved<br /></div>
@@ -28,7 +28,7 @@
 		Bldg 160, Rm 228<br />
 		Stanford, CA 94305-2055<br />
 		<hr style="color:#666;width:775px;height:1px;" />
-		<img src="/group/spatialhistory/media/images/3bullets.png" alt="Copyright Spatial History Project" style="margin-bottom:4px;margin-top:2px;" />
+		<img src="/media/images/3bullets.png" alt="Copyright Spatial History Project" style="margin-bottom:4px;margin-top:2px;" />
 		<br />
 		</div>
 		<div class="a12" style="color:#666;line-height:20px;margin-bottom:5px">&copy;<?=date("Y")?>&nbsp;&nbsp;&nbsp;The Spatial History Project&nbsp;&nbsp;&nbsp;All Rights Reserved<br /></div>
@@ -40,7 +40,7 @@
 	</div>
 </div>
 <?php }  if (!$nofootgraphic) { ?>
-<div><img src="/group/spatialhistory/media/images/bottom_corner.png" alt="Spatial History" style="position:fixed;z-index:-1;bottom:0;right:0;" /></div>
+<div><img src="/media/images/bottom_corner.png" alt="Spatial History" style="position:fixed;z-index:-1;bottom:0;right:0;" /></div>
 <?php } ?>
 
 <script type="text/javascript">
