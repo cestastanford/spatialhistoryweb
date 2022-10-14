@@ -1,0 +1,369 @@
+<html><head>
+    <title>US Interventions</title>
+    <script type="text/javascript" src="polymaps.js"></script>
+    <link type="text/css" rel="stylesheet" href="ex.css"/>
+    <link type="text/css" rel="stylesheet" href="jquery-ui-1.8rc3.custom.css"/>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.8rc3.custom.min.js"></script>
+<script type="text/javascript" src="jquery.tooltip.js"></script>
+    <style type="text/css">
+
+@import url("example.css");
+/*Defines the style of points rendered on map. "r" refers to the radius of each point in pixel dimensions. Other styling options include "fill", "stroke", and "stroke-width" */
+.layer circle {
+  
+  fill-opacity: 0.75;
+  r: 7;
+ 
+}
+
+/*Set the position of the slider related to the window boundaries.*/
+#slider {
+  position: absolute;
+  bottom: 50px;
+  left: 180px;
+  width: 600px;
+}
+
+/*
+Styling for about button and about pop-up window.
+*/
+
+#aboutButton {
+	position:absolute;
+	bottom: 100px;
+   left: 30px;
+}
+
+#backgroundPopup{  
+ display:none;  
+ position:fixed;  
+ _position:absolute; 
+ height:100%;  
+ width:100%;  
+ top:0;  
+ left:0;  
+ background:#000000;  
+ border:1px solid #cecece;  
+ z-index:1;  
+ }  
+ 
+ #popupAbout{  
+display:none;  
+position:fixed;  
+_position:absolute; 
+ height:700px;  
+width:700px;  
+ background:#FFFFFF;  
+ border:2px solid #cecece;  
+z-index:2;  
+padding:12px;  
+font-size:13px;  
+}  
+
+#popupAboutClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#6fa5fd;
+font-weight:700;
+display:block;
+}
+
+/*
+Styling for the "tooltip"---text that appears when the mouse moves over a particular point.
+*/
+#tooltip { 
+	background:#FFF;
+	padding: 5px; 
+	fill: #00FF00;
+	width: 300px;
+	opacity:0.75;
+	position: absolute; 
+	font: 14px/134% Helvetica Neue, sans-serif;
+	
+}
+
+</style>
+  </head>
+  
+<body>
+ 
+<div id="tooltip" style="display:none;"></div>
+<div id="aboutButton"><input type="submit" value="ABOUT" /></div>
+  
+<script>
+
+/*
+*
+TIMESLIDER SCRIPT
+The page uses a jquery slider to control the timeline part of the page.  
+for more information see: http://jqueryui.com/demos/slider/#range
+*
+*/ 
+var minRange = 1940;//set the current minimum value of the slider
+var maxRange = 1950;//set the current maximum value of the slider
+	$(function() {
+		$( "#slider" ).slider({
+			values: [minRange, maxRange],
+			min: 1790,//set the minimum value of time slider
+			max: 2010,//set the maximum value of the time slider
+			step: 1,
+			range: true,
+			//the following function is called whenever the slider is moved//
+			slide: function( event, ui ) {
+				$( "#year" ).val( ui.values[0] + " - " + ui.values[1] );
+				minRange = ui.values[0];
+				maxRange = ui.values[1];
+				json.reshow();//re-renders the mapping elements
+			}
+		});
+		$( "#year" ).val( $( "#slider" ).slider( "value" ) );
+	});
+	
+	
+/*
+*
+POLYMAPS MAPPING SCRIPT
+The page uses polymaps to render a map from data stored in GEOjson format. The data is hosted in a separate json document and linked to within the script.
+For more information see http://polymaps.org/
+*
+*/
+
+/*Mapping variables*/
+var po = org.polymaps;//creates a new instance of the map
+var json =po.geoJson().url("streamlinedData.json");//link to the data in json format
+var selectedCountry = "";
+var strokeWidth = "1.0px";
+
+/*Creates a base map. Center and zoom parameters set starting position and zoom level of map*/
+var map = po.map()
+    .container(document.body.appendChild(po.svg("svg")))
+    .center({lon: 0, lat: 0})
+    .zoom(2)
+    .add(po.interact());
+
+/*Adds background map from cloudmade*/
+map.add(po.image()
+   .url(po.url("http://{S}tile.cloudmade.com"
+    + "/1a1b06b230af4efdbb989ea99e9841af" // http://cloudmade.com/register
+    + "/999/256/{Z}/{X}/{Y}.png")
+    .hosts(["a.", "b.", "c.", ""])));
+
+/*Add points, stored in variable "json" to map.*/
+map.add(json
+    .tile(false)
+   	.on("load", show)//calls the function "show" when the map is loaded
+	.on("show", show)//calls the function "show" whenever the map is re-loaded, i.e. by the time slider
+	.id("intervention"));
+
+map.add(po.compass()
+    .pan("none"));
+
+/*This function is called every time the map is reloaded--for example, by zooming, clicking, or using the time slider*/
+function show(e) {
+	/*for each data point, do the following:*/
+  for (var i = 0; i < e.features.length; i++) {
+	 var feature = e.features[i];
+	p = feature.data.properties;
+	/*The function isWithinRange shows or hides a given point based on whether it is within the current range of the time slider. To use this function, change the value of "Title" "Start" and "End" to correspond to the property headings denoting the name, start date, and end date of each data point. For example, if a given data set was converted to JSON from an ArcGIS shapefile, and the start date was stored under the column heading "STARTDATE" in the GIS aattribute table, the value "p.Start" should be changed to "p.STARTDATE". Check the "properties" values in the JSON file containing the data for the map to be sure the headings are correct.*/
+	var r = isWithinRange(p.Title, p.Start, p.End);
+	 feature.element.setAttribute("r", r);
+	 
+	feature.element.setAttribute('onmouseover', 'showDetail("' +p.Title + '", "' +p.Start + '", "' +p.End + '");');//Calls the function "showDetail" when the mouse moves over a data point
+   feature.element.setAttribute('onmouseout', 'hideDetail();');//calls "hideDetail" when the mouse moves away from a point
+   feature.element.setAttribute('onmousedown', 'updateCurrentCountry("' +p.ID + '", "' +p.Descr_1 + '", "' +p.Descr2 + '", "' +p.Descr3 + '", "' +p.Descr4 + '", "' +p.Descr5 + '");'); //displays the discription of a point when it is clicked on. The description was split into five columns, titled "Descr_1" to "Descr_5" due to the 254 character word limit in GIS
+   var strokeColor = joinEvents(p.ID); //gives related events the same outline color when one point is clicked on
+     feature.element.onmousemove = detailFollow;
+	feature.element.setAttribute("fill", "#ff2323");//sets the fill color of each data point
+	feature.element.setAttribute("stroke", strokeColor);
+	feature.element.setAttribute("stroke-width", strokeWidth);
+  }
+}
+
+
+/*
+Called whenever the a data point is clicked on. "selectedCountry" stores the id of the Country that was most recently clicked on. The function displays the text stored in the "Descr" headings of the element properties.
+*/
+function updateCurrentCountry(id, d1, d2, d3, d4, d5){
+	selectedCountry = id;
+	currentIntervention = d1;
+	$('#tooltip').html(d1 + d2 + d3 +d4 + d5);
+    $('#tooltip').show();
+	json.reshow();
+}
+
+/*the tooltip follows the mouse as it moves*/
+function detailFollow(e) {
+    $('#tooltip').css({
+        top: (e.pageY) + "px",
+        left: (e.pageX + 15) + "px"
+    });
+}
+
+/*Shows properties of the data point when it is moused over*/
+function showDetail(name, startYear, endYear) {
+        $('#tooltip').html("<b>" + startYear + "-" +endYear + "   " + name + "</b>");
+    $('#tooltip').show();
+}
+
+/* Hides the tooltip when the mouse moves away.*/
+function hideDetail() {
+    $('#tooltip').hide();
+}
+
+/*If a certain data point has the same id has the currently selected datapoint, they are poth highlighted/*/
+function joinEvents(name){
+	if (selectedCountry == name){
+		strokeWidth = "3.0px";
+		return "#ffffff";
+	}
+	strokeWidth = "1.0px";
+	return "#000000";
+}
+
+/*Checks whether a given data point is within the range currently represented by the time slider*/
+function isWithinRange(name, startYear, endYear){
+	if(startYear <= maxRange){
+		if (endYear >= minRange){
+			currentInterventions = "blah";
+			return 10;
+		}
+	}
+	return 0;
+}
+
+
+/*
+*
+POP-UP ABOUT WINDOW SCRIPT
+Uses jQuery and CSS styling to create the pop-up about window.
+learn more at: http://yensdesign.com/2008/09/how-to-create-a-stunning-and-smooth-popup-using-jquery/
+*
+*/
+var popupStatus = 0;
+
+//loads popup
+function loadPopup(){
+	if(popupStatus==0){
+		$("#backgroundPopup").css({
+			"opacity": "0.7"
+		});
+		$("#backgroundPopup").fadeIn("slow");
+		$("#popupAbout").fadeIn("slow");
+		popupStatus = 1;
+	}
+}
+
+function disablePopup(){
+	if(popupStatus==1){
+		$("#backgroundPopup").fadeOut("slow");
+		$("#popupAbout").fadeOut("slow");
+		popupStatus = 0;
+	}
+}
+
+//centers popup in screen
+function centerPopup(){
+	var windowWidth = document.documentElement.clientWidth;
+	var windowHeight = document.documentElement.clientHeight;
+	var popupHeight = $("#popupAbout").height();
+	var popupWidth = $("#popupAbout").width();
+	$("#popupAbout").css({
+		"position": "absolute",
+		"top": windowHeight/2-popupHeight/2,
+		"left": windowWidth/2-popupWidth/2
+	});
+}
+
+
+$(document).ready(function(){
+	$("#aboutButton").click(function(){
+		centerPopup();
+		loadPopup();
+	});
+	$("#popupAboutClose").click(function(){
+		disablePopup();
+	});
+	$("#backgroundPopup").click(function(){
+		disablePopup();
+	});
+	$(document).keypress(function(e){
+		if(e.keyCode==27 && popupStatus==1){
+			disablePopup();
+		}
+	});
+
+});
+
+
+     </script>
+     
+    
+  <div id="slider"> </div>
+   <div>
+  <label for="year"></label>
+	<input type="text" id="year" style="border:0; color:#FFFFFF; font-weight:bold; background:none; font-size: 24px;  position: absolute;
+  bottom: 40px;
+  left: 20px;" />
+
+    <span id="copy">
+
+      &copy; 2010
+      <a href="http://www.cloudmade.com/">CloudMade</a>,
+      <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors,
+      <a href="http://creativecommons.org/licenses/by-sa/2.0/">CCBYSA</a>. </a>
+    </span>
+    </div>
+    </div>
+    <div id="popupAbout">  
+       <a id="popupAboutClose">x</a>  
+        <h1>About the U.S. Interventions Visualization</h1>  
+       <p id="aboutArea"> 
+        
+       <!---Change the following text in order to change the contents of the about area of the page-->
+           This report lists hundreds of instances in which the United States has used its armed forces abroad
+in situations of military conflict or potential conflict or for other than normal peacetime purposes.
+It was compiled in part from various older lists and is intended primarily to provide a rough
+survey of past U.S. military ventures abroad, without reference to the magnitude of the given
+instance noted. The listing often contains references, especially from 1980 forward, to continuing
+military deployments especially U.S. military participation in multinational operations associated
+with NATO or the United Nations. Most of these post-1980 instances are summaries based on
+Presidential reports to Congress related to the War Powers Resolution. A comprehensive
+commentary regarding any of the instances listed is not undertaken here.
+           <br/><br/>  
+            The instances differ greatly in number of forces, purpose, extent of hostilities, and legal
+authorization. Eleven times in its history the U.S. has formally declared war against foreign
+nations. These eleven U.S. war declarations encompassed five separate wars: the war with Great
+Britain declared in 1812; the war with Mexico declared in 1846; the war with Spain declared in
+1898; the First World War, during which the U.S. declared war with Germany and with Austria-
+Hungary during 1917; and World War II, during which the U.S. declared war against Japan,
+Germany, and Italy in 1941, and against Bulgaria, Hungary, and Rumania in 1942.          
+  <br/><br/> 
+ Some of the instances were extended military engagements that might be considered undeclared
+wars. These include the Undeclared Naval War with France from 1798 to 1800; the First Barbary
+War from 1801 to 1805; the Second Barbary War of 1815; the Korean War of 1950-1953; the
+Vietnam War from 1964 to 1973; the Persian Gulf War of 1991; global actions against foreign
+terrorists after the September 11, 2001, attacks on the United States; and the war with Iraq in
+2003. With the exception of the Korean War, all of these conflicts received Congressional
+authorization in some form short of a formal declaration of war. Other, more recent instances
+often involve deployment of U.S. military forces as part of a multinational operation associated
+with NATO or the United Nations.
+ <br/><br/>
+ The majority of the instances listed prior to World War II were brief Marine or Navy actions to
+protect U.S. citizens or promote U.S. interests. A number were actions against pirates or bandits.
+Covert actions, disaster relief, and routine alliance stationing and training exercises are not
+included here, nor are the Civil and Revolutionary Wars and the continual use of U.S. military
+units in the exploration, settlement, and pacification of the western part of the United States.
+        </p>  
+    </div>  
+    <div id="backgroundPopup"></div>  
+   	 <div  class="slide-out-div">
+            <a class="handle" href="http://link-for-non-js-users.html">Content</a>
+    </script>
+      </div>
+
+  </body>
+</html>
