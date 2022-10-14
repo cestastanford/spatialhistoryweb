@@ -1,0 +1,8 @@
+<Template xmlns="http://www.evolus.vn/Namespace/Pencil">
+    <Property name="id">Evolus:HTML:Tab</Property>
+    <Property name="name">Tab Navigation</Property>
+    <Property name="author">Maxime Delorme</Property>
+    <Property name="description">Left panel with thumbnails without javascript</Property>
+
+    <Property name="styleSheet">StyleSheet.xslt</Property>
+</Template>
