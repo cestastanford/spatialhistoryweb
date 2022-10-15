@@ -21,7 +21,7 @@ a {
 
 @font-face {
 	font-family: 'GillSans';
-	src: local(gillsans), url('http://spatialhistory.stanford.edu/cgi-bin/site/fonts/GIL_____.ttf') format('truetype');
+	src: local(gillsans), url('fonts/GIL_____.ttf') format('truetype');
 }
 
 a:hover {
@@ -34,7 +34,7 @@ a:focus {
 	border:0;
 }
 #top {
-	background: url(/media/images/stanford_bar.jpg) repeat-x;
+	background: url(media/images/stanford_bar.jpg) repeat-x;
 	height:30px;
 	min-width: 1024px;
 	width:100%;
@@ -58,7 +58,7 @@ img {
 }
 #head {
 	clear:both;
-	background: url(/media/images/head_bg.jpg) repeat-x;
+	background: url(media/images/head_bg.jpg) repeat-x;
 	width:100%;
 	height:152px;
 }
@@ -86,7 +86,7 @@ img {
 	color:#808080;
 }
 #menu {
-	background: url(/media/images/shp_title.jpg) no-repeat;
+	background: url(media/images/shp_title.jpg) no-repeat;
 	z-index:200;
 	min-width:1050px;
 	width:1050px;
@@ -819,7 +819,7 @@ div.warning, .warning {
     color: #840;
 }
 div.warning {
-    background-image: url(/message-warning.png);
+    background-image: url(message-warning.png);
     border-color: #ed5;
 }
 div.messages {
