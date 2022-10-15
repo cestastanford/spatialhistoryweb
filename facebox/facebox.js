@@ -79,8 +79,8 @@
     settings: {
       opacity      : 0.5,
       overlay      : true,
-      loadingImage : '/group/spatialhistory/facebox/loading.gif',
-      closeImage   : '/group/spatialhistory/media/images/closebutton.png',
+      loadingImage : 'facebox/loading.gif',
+      closeImage   : 'media/images/closebutton.png',
       imageTypes   : [ 'png', 'jpg', 'jpeg', 'gif' ],
       faceboxHtml  : '\
     <div id="facebox" style="display:none;"> \
@@ -97,7 +97,7 @@
                 </div> \
                 <div class="footer"> \
                   <a href="#" class="close"> \
-                    <img src="/group/spatialhistory/media/images/closebutton.png" title="close" class="close_image" /> \
+                    <img src="media/images/closebutton.png" title="close" class="close_image" /> \
                   </a> \
                 </div> \
               </td> \

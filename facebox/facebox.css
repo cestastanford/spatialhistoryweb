@@ -1,21 +1,21 @@
 #facebox .b {
-  background:url(/site/facebox/b.png);
+  background:url(facebox/b.png);
 }
 
 #facebox .tl {
-  background:url(/site/facebox/tl.png);
+  background:url(facebox/tl.png);
 }
 
 #facebox .tr {
-  background:url(/site/facebox/tr.png);
+  background:url(facebox/tr.png);
 }
 
 #facebox .bl {
-  background:url(/site/facebox/bl.png);
+  background:url(facebox/bl.png);
 }
 
 #facebox .br {
-  background:url(/site/facebox/br.png);
+  background:url(facebox/br.png);
 }
 
 #facebox {
